@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/94dd6a5651.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Customers Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <!-- <input type="text" class="search" placeholder="&#xF002; Find Customer" /> -->
+      <input
+        id="searchInput"
+        type="text"
+        class="search"
+        placeholder="&#xF002;   Find Customers"
+        style="font-family: Arial, FontAwesome"
+      />
+      <div id="dropContainer">
+        <div class="dropdown">
+          Filter by Name(A-Z)<span
+            ><svg
+              width="10"
+              height="5"
+              viewBox="0 0 10 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0L5 5L10 0H0Z"
+                fill="#5C5F62"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="dropOptions">
+          <div class="option" id="asc">Name (A-Z)</div>
+          <div class="option" id="dsc">Name (Z-A)</div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="customers"></section>
+    <footer></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
